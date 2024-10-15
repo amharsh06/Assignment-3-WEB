@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
     <title>About</title>
+    <link href="../public/css/main.css" rel="stylesheet"> <!-- Ensure this is correct -->
 </head>
 <body>
-    <nav>
-        <a href="/">Climate Solutions</a>
-        <a class="active" href="/about">About</a>
-        <div>
-            Sector
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between">
+            <a class="text-white text-xl" href="/">Climate Solutions</a>
             <div>
-                <a href="/solutions/projects?sector=someSector">someSector</a>
-                <!-- Add other sectors here -->
+                <a class="text-white px-4" href="/about" class="active">About</a>
+                <a class="text-white px-4" href="/">Home</a>
             </div>
         </div>
     </nav>
+
     <div class="container mx-auto">
         <div class="hero">
-            <h1>About</h1>
-            <p>All about me.</p>
+            <h1 class="text-4xl font-bold">About</h1>
+            <p>All about me...</p>
         </div>
-        <div class="grid">
+        
+        <div class="grid grid-cols-2">
             <div>
-                <img src="path/to/your/image.jpg" alt="About Me">
+                <img src="https://example.com/myimage.jpg" alt="My Image">
             </div>
             <div>
-                <p>Short blurb about yourself.</p>
+                <p>My hobbies include...</p>
             </div>
         </div>
     </div>

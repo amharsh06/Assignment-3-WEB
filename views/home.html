@@ -3,34 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
     <title>Climate Solutions</title>
+    <link href="../public/css/main.css" rel="stylesheet"> <!-- Ensure this is correct -->
 </head>
 <body>
-    <nav>
-        <a href="/">Climate Solutions</a>
-        <a href="/about">About</a>
-        <div>
-            Sector
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between">
+            <a class="text-white text-xl" href="/">Climate Solutions</a>
             <div>
-                <a href="/solutions/projects?sector=someSector">someSector</a>
-                <!-- Add other sectors here -->
+                <a class="text-white px-4" href="/about">About</a>
+                <div class="relative inline-block text-left">
+                    <div>
+                        <button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-gray-800 text-sm font-medium text-white hover:bg-gray-700 focus:outline-none" aria-haspopup="true" aria-expanded="true">
+                            Sector
+                        </button>
+                    </div>
+                    <div class="z-10 absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        <div class="py-1" role="none">
+                            <a href="/solutions/projects?sector=industry" class="text-gray-700 block px-4 py-2 text-sm">Industry</a>
+                            <a href="/solutions/projects?sector=agriculture" class="text-gray-700 block px-4 py-2 text-sm">Agriculture</a>
+                            <a href="/solutions/projects?sector=technology" class="text-gray-700 block px-4 py-2 text-sm">Technology</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
+
     <div class="container mx-auto">
         <div class="hero">
-            <h1>Explore Our Projects</h1>
+            <h1 class="text-4xl font-bold">Explore Our Projects</h1>
             <a href="/solutions/projects" class="btn">View Projects</a>
         </div>
-        <div class="grid">
+
+        <div class="grid grid-cols-3 gap-4">
+            <!-- Example project card, replace with your project data -->
             <div class="card">
-                <img src="project.feature_img_url" alt="Project Image">
-                <h2>Project Title</h2>
-                <p>Short summary of the project.</p>
-                <a href="/solutions/projects/id" class="btn">View Project</a>
+                <img src="https://example.com/image1.jpg" alt="Project 1">
+                <h2>Project 1 Title</h2>
+                <p>Short summary of project 1.</p>
+                <a href="/solutions/projects/1" class="btn">View Project</a>
             </div>
-            <!-- Repeat for more project cards -->
+            <div class="card">
+                <img src="https://example.com/image2.jpg" alt="Project 2">
+                <h2>Project 2 Title</h2>
+                <p>Short summary of project 2.</p>
+                <a href="/solutions/projects/2" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <img src="https://example.com/image3.jpg" alt="Project 3">
+                <h2>Project 3 Title</h2>
+                <p>Short summary of project 3.</p>
+                <a href="/solutions/projects/3" class="btn">View Project</a>
+            </div>
         </div>
     </div>
 </body>

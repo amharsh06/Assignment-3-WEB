@@ -5,30 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link href="../public/css/main.css" rel="stylesheet"> <!-- Ensure this is correct -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        nav {
+            background-color: #35424a;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            background: #2c3e50;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .img-container {
+            text-align: center;
+        }
+        .img-container img {
+            border-radius: 8px;
+            max-width: 80%;
+        }
+    </style>
 </head>
 <body>
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex justify-between">
-            <a class="text-white text-xl" href="/">Climate Solutions</a>
-            <div>
-                <a class="text-white px-4" href="/about" class="active">About</a>
-                <a class="text-white px-4" href="/">Home</a>
-            </div>
+    <nav>
+        <div class="container">
+            <a href="/">Climate Solutions</a>
+            <a class="active" href="/about">About</a>
         </div>
     </nav>
 
-    <div class="container mx-auto">
+    <div class="container">
         <div class="hero">
-            <h1 class="text-4xl font-bold">About</h1>
+            <h1>About</h1>
             <p>All about me...</p>
         </div>
         
-        <div class="grid grid-cols-2">
-            <div>
+        <div class="grid">
+            <div class="img-container">
                 <img src="https://example.com/myimage.jpg" alt="My Image">
             </div>
             <div>
-                <p>My hobbies include...</p>
+                <h2>Hello! I'm Harsh Kathrotiya</h2>
+                <p>I enjoy coding, learning new technologies, and exploring nature. Currently, I'm taking courses on web development, data science, and sustainability.</p>
             </div>
         </div>
     </div>

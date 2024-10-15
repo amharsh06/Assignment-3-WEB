@@ -3,63 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.css" rel="stylesheet">
     <title>Climate Solutions</title>
-    <link href="../public/css/main.css" rel="stylesheet"> 
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="/" class="text-white text-2xl">Climate Solutions</a>
-            <div class="flex items-center">
-                <a href="/about" class="text-white px-4">About</a>
-                <div class="dropdown relative">
-                    <button class="text-white px-4">
-                        Sector
-                    </button>
-                    <div class="dropdown-content absolute hidden bg-white text-black shadow-lg rounded-lg mt-2">
-                        <a href="/solutions/projects?sector=industry" class="block px-4 py-2">Industry</a>
-                        <a href="/solutions/projects?sector=agriculture" class="block px-4 py-2">Agriculture</a>
-                        <a href="/solutions/projects?sector=technology" class="block px-4 py-2">Technology</a>
-                    </div>
-                </div>
+<body class="bg-base-200 text-base-content">
+    <header class="bg-primary text-white p-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold">Climate Solutions</a>
+        <nav class="space-x-4">
+            <a href="/" class="active">Home</a>
+            <a href="/about">About</a>
+            <div class="dropdown">
+                <label tabindex="0" class="btn m-1">Sector</label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="/solutions/projects?sector=industry">Industry</a></li>
+                    <li><a href="/solutions/projects?sector=environment">Environment</a></li>
+                    <li><a href="/solutions/projects?sector=social">Social</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mx-auto p-8">
+        <div class="hero bg-base-300 p-8 rounded-lg text-center">
+            <h1 class="text-5xl font-bold mb-6">Explore Our Projects</h1>
+        </div>
+        <div class="hero bg-base-300 p-8 rounded-lg text-center">
+           <a href="/solutions/projects" class="btn btn-primary mt-6">View Projects</a> 
+        </div>
+ 
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+            <div class="card bg-base-100 shadow-lg rounded-lg p-4">
+                <img src="project1_image_url" alt="Project 1" class="rounded-lg"/>
+                <h2 class="text-xl font-bold mt-2">Project 1 Title</h2>
+                <p>Short summary for Project 1.</p>
+                <a href="/solutions/projects/9" class="btn btn-secondary mt-2">View Project</a>
+            </div>
+            <div class="card bg-base-100 shadow-lg rounded-lg p-4">
+                <img src="project2_image_url" alt="Project 2" class="rounded-lg"/>
+                <h2 class="text-xl font-bold mt-2">Project 2 Title</h2>
+                <p>Short summary for Project 2.</p>
+                <a href="/solutions/projects/2" class="btn btn-secondary mt-2">View Project</a>
+            </div>
+            <div class="card bg-base-100 shadow-lg rounded-lg p-4">
+                <img src="project3_image_url" alt="Project 3" class="rounded-lg"/>
+                <h2 class="text-xl font-bold mt-2">Project 3 Title</h2>
+                <p>Short summary for Project 3.</p>
+                <a href="/solutions/projects/3" class="btn btn-secondary mt-2">View Project</a>
             </div>
         </div>
-    </nav>
+    </main>
 
-    <div class="container mx-auto my-8">
-        <div class="hero bg-blue-500 text-white text-center p-8 rounded-lg">
-            <h1 class="text-3xl">Explore Our Projects</h1>
-            <a href="/solutions/projects" class="btn btn-primary mt-4">View Projects</a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            <div class="card bg-white shadow-lg rounded-lg p-4">
-                <img src="https://example.com/image1.jpg" alt="Project 1" class="rounded-lg mb-4">
-                <h2 class="text-xl">Project 1 Title</h2>
-                <p>Short summary of project 1.</p>
-                <a href="/solutions/projects/1" class="btn btn-primary mt-4">View Project</a>
-            </div>
-            <div class="card bg-white shadow-lg rounded-lg p-4">
-                <img src="https://example.com/image2.jpg" alt="Project 2" class="rounded-lg mb-4">
-                <h2 class="text-xl">Project 2 Title</h2>
-                <p>Short summary of project 2.</p>
-                <a href="/solutions/projects/2" class="btn btn-primary mt-4">View Project</a>
-            </div>
-            <div class="card bg-white shadow-lg rounded-lg p-4">
-                <img src="https://example.com/image3.jpg" alt="Project 3" class="rounded-lg mb-4">
-                <h2 class="text-xl">Project 3 Title</h2>
-                <p>Short summary of project 3.</p>
-                <a href="/solutions/projects/9" class="btn btn-primary mt-4">View Project</a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Dropdown functionality
-        document.querySelector('.dropdown button').addEventListener('click', function() {
-            const dropdownContent = document.querySelector('.dropdown-content');
-            dropdownContent.classList.toggle('hidden');
-        });
-    </script>
+    <footer class="bg-primary text-white p-4 text-center">
+        <p>&copy; 2024 Climate Solutions</p>
+    </footer>
 </body>
 </html>

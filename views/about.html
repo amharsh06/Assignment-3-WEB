@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.css" rel="stylesheet">
     <title>About</title>
-    <link href="../public/css/main.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="/" class="text-white text-2xl">Climate Solutions</a>
-            <div class="flex items-center">
-                <a class="text-white px-4 active" href="/about">About</a>
+<body class="bg-base-200 text-base-content">
+    <header class="bg-primary text-white p-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold">Climate Solutions</a>
+        <nav class="space-x-4">
+            <a class="active" href="/about">About</a>
+            <a href="/">Home</a>
+            <div class="dropdown">
+                <label tabindex="0" class="btn m-1">Sector</label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="/solutions/projects?sector=industry">Industry</a></li>
+                    <li><a href="/solutions/projects?sector=environment">Environment</a></li>
+                    <li><a href="/solutions/projects?sector=social">Social</a></li>
+                </ul>
             </div>
+        </nav>
+    </header>
+    <main class="container mx-auto p-8">
+        <div class="hero bg-base-300 p-10 rounded-lg">
+            <h1 class="text-5xl font-bold">About</h1>
+           
         </div>
-    </nav>
-
-    <div class="container mx-auto my-8">
-        <div class="hero bg-green-500 text-white text-center p-8 rounded-lg">
-            <h1 class="text-3xl">About</h1>
-            <p>All about me...</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div class="img-container text-center">
-                <img src="https://example.com/myimage.jpg" alt="My Image" class="rounded-lg mb-4" style="max-width: 80%;">
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
             <div>
-                <h2 class="text-xl">Hello! I'm Harsh Kathrotiya</h2>
-                <p>I enjoy coding, learning new technologies, and exploring nature. Currently, I'm taking courses on web development, data science, and sustainability.</p>
+                <img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/2B08/production/_127561011_climate_5_cc_index_and_article_image_template_976-ncclimate_change_article_image_template_976-nc.png.webp" alt="About Me" class="rounded-lg"/>
+            </div>
+            <div class="flex items-center">
+                <p>I am a student with a passion for climate solutions. My hobbies include hiking, coding, and learning about sustainability.</p>
             </div>
         </div>
-    </div>
+    </main>
+    <footer class="bg-primary text-white p-4 text-center">
+        <p>&copy; 2024 Climate Solutions</p>
+    </footer>
 </body>
 </html>

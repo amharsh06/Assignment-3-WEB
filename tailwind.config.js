@@ -1,9 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./views/*.html'],
+  content: [
+    "./public/**/*.html", 
+    "./views/**/*.html", 
+    "./src/**/*.{js,jsx,ts,tsx}", 
+  ],
   theme: {
     extend: {},
+    daisyui: {
+      themes: ["dim"], 
+    },
   },
-  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+  plugins: [
+    require('daisyui'), 
+    require('@tailwindcss/typography'), 
+  ],
 };
-

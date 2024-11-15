@@ -1,0 +1,15 @@
+<nav class="bg-gray-800 p-4">
+    <ul class="flex space-x-4">
+        <li>
+            <a class="<%= (page === '/') ? 'text-white font-bold' : 'text-gray-400' %> hover:text-white" href="/">Home</a>
+        </li>
+        <li>
+            <a class="<%= (page === '/about') ? 'text-white font-bold' : 'text-gray-400' %> hover:text-white" href="/about">About</a>
+        </li>
+        <li>
+            <a class="<%= (page === '/solutions/projects') ? 'text-white font-bold' : 'text-gray-400' %> hover:text-white" href="/solutions/projects">
+                View Projects
+            </a>
+        </li>
+    </ul>
+</nav>
